@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okul Ders Programı</title>
     <style>
         * {
@@ -133,6 +134,98 @@
 
         #clock {
             text-align: right;
+        }
+
+        /* Mobil responsive stiller */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .schedule-card {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+                margin: 0;
+            }
+
+            .time {
+                font-size: 20px;
+            }
+
+            .date {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .schedule-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .lesson-number {
+                width: auto;
+                font-size: 16px;
+            }
+
+            .lesson-time {
+                width: auto;
+                margin-left: 0;
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .duty-areas {
+                margin-left: 0;
+            }
+
+            .duty-teachers {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .duty-teacher {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+
+            .timer {
+                font-size: 16px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .time {
+                font-size: 18px;
+            }
+
+            .date {
+                font-size: 14px;
+            }
+
+            .lesson-number {
+                font-size: 14px;
+            }
+
+            .lesson-time {
+                font-size: 13px;
+            }
+
+            .timer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
